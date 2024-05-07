@@ -41,11 +41,11 @@ export default function Home() {
       email: newEmail,
     };
     if (
-      !newFirstName ||
-      !newLastName ||
-      !newPosition ||
-      !newPhone ||
-      !newEmail
+      newFirstName ||
+      newLastName ||
+      newPosition ||
+      newPhone ||
+      newEmail
     ) {
       await fetch("/api/users", {
         method: "post",
