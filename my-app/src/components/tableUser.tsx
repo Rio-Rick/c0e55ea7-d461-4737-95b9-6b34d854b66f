@@ -27,7 +27,7 @@ export default function TableUser({ user }: { user: User }) {
         <td>
           <input
             type="text"
-            value={firstName ?? "error"}
+            value={firstName ?? ""}
             name="firstName"
             onChange={(event) => setFirstName(event.target.value)}
           />
@@ -36,7 +36,7 @@ export default function TableUser({ user }: { user: User }) {
           <input
             type="text"
             name="lastName"
-            value={lastName}
+            value={lastName ?? ""}
             onChange={(event) => setLastName(event.target.value)}
           />
         </td>
@@ -44,7 +44,7 @@ export default function TableUser({ user }: { user: User }) {
           <input
             type="text"
             name="position"
-            value={position}
+            value={position ?? ""}
             onChange={(event) => setPosition(event.target.value)}
           />
         </td>
@@ -52,7 +52,7 @@ export default function TableUser({ user }: { user: User }) {
           <input
             type="text"
             name="phone"
-            value={phone}
+            value={phone ?? ""}
             onChange={(event) => setPhone(event.target.value)}
           />
         </td>
@@ -60,7 +60,7 @@ export default function TableUser({ user }: { user: User }) {
           <input
             type="text"
             name="email"
-            value={email}
+            value={email ?? ""}
             onChange={(event) => setEmail(event.target.value)}
           />
         </td>

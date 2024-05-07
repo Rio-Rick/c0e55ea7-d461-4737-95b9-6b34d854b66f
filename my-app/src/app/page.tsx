@@ -41,11 +41,11 @@ export default function Home() {
       email: newEmail,
     };
     if (
-      newFirstName !== "" ||
-      newLastName !== "" ||
-      newPosition !== "" ||
-      newPhone !== "" ||
-      newEmail !== ""
+      !newFirstName ||
+      !newLastName ||
+      !newPosition ||
+      !newPhone ||
+      !newEmail
     ) {
       await fetch("/api/users", {
         method: "post",
@@ -92,7 +92,9 @@ export default function Home() {
           encType="multipart/form-datas"
           method="put"
         >
-          <button className="border-2 border-stone-950 p-2 m-2" type="submit">Save</button>
+          <button className="border-2 border-stone-950 p-2 m-2" type="submit">
+            Save
+          </button>
           <button
             type="button"
             className="border-2 border-stone-950 p-2 m-2"
@@ -111,48 +113,57 @@ export default function Home() {
               </tr>
             </thead>
             <tbody className="p-4">
-              <tr className={addUser ? "" : "hidden"}>
-                <td>
-                  <input
-                    type="text"
-                    value={firstName ?? "error"}
-                    name="firstNameinput"
-                    onChange={(event) => setFirstName(event.target.value)}
-                  />
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    name="lastNameinput"
-                    value={lastName}
-                    onChange={(event) => setLastName(event.target.value)}
-                  />
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    name="positioninput"
-                    value={position}
-                    onChange={(event) => setPosition(event.target.value)}
-                  />
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    name="phoneinput"
-                    value={phone}
-                    onChange={(event) => setPhone(event.target.value)}
-                  />
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    name="emailinput"
-                    value={email}
-                    onChange={(event) => setEmail(event.target.value)}
-                  />
-                </td>
-              </tr>
+              {addUser ? (
+                <tr className={addUser ? "" : "hidden"}>
+                  <td>
+                    <input
+                      type="text"
+                      required
+                      value={firstName ?? ""}
+                      name="firstNameinput"
+                      onChange={(event) => setFirstName(event.target.value)}
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      required
+                      name="lastNameinput"
+                      value={lastName ?? ""}
+                      onChange={(event) => setLastName(event.target.value)}
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      required
+                      name="positioninput"
+                      value={position ?? ""}
+                      onChange={(event) => setPosition(event.target.value)}
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      required
+                      name="phoneinput"
+                      value={phone ?? ""}
+                      onChange={(event) => setPhone(event.target.value)}
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="email"
+                      required
+                      name="emailinput"
+                      value={email ?? ""}
+                      onChange={(event) => setEmail(event.target.value)}
+                    />
+                  </td>
+                </tr>
+              ) : (
+                <></>
+              )}
               {data.data?.map((user) => (
                 <TableUser user={user} key={user._id.toString()} />
               ))}
