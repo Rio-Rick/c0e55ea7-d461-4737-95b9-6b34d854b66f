@@ -1,0 +1,142 @@
+[
+  {
+    "firstName": "James",
+    "lastName": "Smith",
+    "position": "CEO",
+    "phone": "+621234567890",
+    "email": "james.smith@example.com"
+  },
+  {
+    "firstName": "Maria",
+    "lastName": "Garcia",
+    "position": "CTO",
+    "phone": "+621234567891",
+    "email": "maria.garcia@example.com"
+  },
+  {
+    "firstName": "Robert",
+    "lastName": "Johnson",
+    "position": "CFO",
+    "phone": "+621234567892",
+    "email": "robert.johnson@example.com"
+  },
+  {
+    "firstName": "Patricia",
+    "lastName": "Lee",
+    "position": "COO",
+    "phone": "+621234567893",
+    "email": "patricia.lee@example.com"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Brown",
+    "position": "Director",
+    "phone": "+621234567894",
+    "email": "michael.brown@example.com"
+  },
+  {
+    "firstName": "Linda",
+    "lastName": "Davis",
+    "position": "Manager",
+    "phone": "+621234567895",
+    "email": "linda.davis@example.com"
+  },
+  {
+    "firstName": "Elizabeth",
+    "lastName": "Miller",
+    "position": "Supervisor",
+    "phone": "+621234567896",
+    "email": "elizabeth.miller@example.com"
+  },
+  {
+    "firstName": "William",
+    "lastName": "Wilson",
+    "position": "Lead Engineer",
+    "phone": "+621234567897",
+    "email": "william.wilson@example.com"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Moore",
+    "position": "Sales Lead",
+    "phone": "+621234567898",
+    "email": "david.moore@example.com"
+  },
+  {
+    "firstName": "Jennifer",
+    "lastName": "Taylor",
+    "position": "Product Manager",
+    "phone": "+621234567899",
+    "email": "jennifer.taylor@example.com"
+  },
+  {
+    "firstName": "Richard",
+    "lastName": "Anderson",
+    "position": "Project Coordinator",
+    "phone": "+621234567900",
+    "email": "richard.anderson@example.com"
+  },
+  {
+    "firstName": "Charles",
+    "lastName": "Thomas",
+    "position": "Quality Assurance",
+    "phone": "+621234567901",
+    "email": "charles.thomas@example.com"
+  },
+  {
+    "firstName": "Joseph",
+    "lastName": "Jackson",
+    "position": "Research Analyst",
+    "phone": "+621234567902",
+    "email": "joseph.jackson@example.com"
+  },
+  {
+    "firstName": "Susan",
+    "lastName": "White",
+    "position": "Human Resources",
+    "phone": "+621234567903",
+    "email": "susan.white@example.com"
+  },
+  {
+    "firstName": "Jessica",
+    "lastName": "Harris",
+    "position": "Marketing Specialist",
+    "phone": "+621234567904",
+    "email": "jessica.harris@example.com"
+  },
+  {
+    "firstName": "Thomas",
+    "lastName": "Martin",
+    "position": "Customer Service Rep",
+    "phone": "+621234567905",
+    "email": "thomas.martin@example.com"
+  },
+  {
+    "firstName": "Sarah",
+    "lastName": "Clark",
+    "position": "Accountant",
+    "phone": "+621234567906",
+    "email": "sarah.clark@example.com"
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Rodriguez",
+    "position": "Technical Support",
+    "phone": "+621234567907",
+    "email": "daniel.rodriguez@example.com"
+  },
+  {
+    "firstName": "Lisa",
+    "lastName": "Lewis",
+    "position": "Operations Manager",
+    "phone": "+621234567908",
+    "email": "lisa.lewis@example.com"
+  },
+  {
+    "firstName": "Mark",
+    "lastName": "Walker",
+    "position": "Public Relations",
+    "phone": "+621234567909",
+    "email": "mark.walker@example.com"
+  }
+]
